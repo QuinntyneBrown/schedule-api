@@ -7,6 +7,4 @@ import { Component, ChangeDetectionStrategy, Input, OnInit, ViewEncapsulation } 
     changeDetection: ChangeDetectionStrategy.OnPush,
     encapsulation: ViewEncapsulation.None
 })
-export class AppComponent { 
-
-}
+export class AppComponent { }

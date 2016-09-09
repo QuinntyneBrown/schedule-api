@@ -261,8 +261,11 @@
     <TypeScriptCompile Include="src\app\helpers\helpers.module.ts" />
     <TypeScriptCompile Include="src\app\helpers\index.ts" />
     <TypeScriptCompile Include="src\app\index.ts" />
+    <TypeScriptCompile Include="src\app\models\channel.model.ts" />
+    <TypeScriptCompile Include="src\app\models\episode.model.ts" />
     <TypeScriptCompile Include="src\app\models\index.ts" />
     <TypeScriptCompile Include="src\app\models\schedule-item.model.ts" />
+    <TypeScriptCompile Include="src\app\models\tv-show.model.ts" />
     <TypeScriptCompile Include="src\app\pages\home-page.component.ts" />
     <TypeScriptCompile Include="src\app\pages\index.ts" />
     <TypeScriptCompile Include="src\app\pipes\index.ts" />
@@ -297,6 +300,21 @@
     <TypeScriptCompile Include="src\polyfills.ts" />
     <TypeScriptCompile Include="src\vendor.ts" />
     <TypeScriptCompile Include="src\app\routing\providers\index.ts" />
+    <TypeScriptCompile Include="src\app\actions\channel.actions.ts" />
+    <TypeScriptCompile Include="src\app\actions\episode.actions.ts" />
+    <TypeScriptCompile Include="src\app\actions\tv-show.actions.ts" />
+    <TypeScriptCompile Include="src\app\constants\add-tv-show-success.action.ts" />
+    <TypeScriptCompile Include="src\app\constants\get-tv-show-success.action.ts" />
+    <TypeScriptCompile Include="src\app\constants\remove-tv-show-success.action.ts" />
+    <TypeScriptCompile Include="src\app\constants\add-episode-success.action.ts" />
+    <TypeScriptCompile Include="src\app\constants\get-episode-success.action.ts" />
+    <TypeScriptCompile Include="src\app\constants\remove-episode-success.action.ts" />
+    <TypeScriptCompile Include="src\app\constants\add-channel-success.action.ts" />
+    <TypeScriptCompile Include="src\app\constants\get-channel-success.action.ts" />
+    <TypeScriptCompile Include="src\app\constants\remove-channel-success.action.ts" />
+    <TypeScriptCompile Include="src\app\services\tv-show.service.ts" />
+    <TypeScriptCompile Include="src\app\services\channel.service.ts" />
+    <TypeScriptCompile Include="src\app\services\episode.service.ts" />
   </ItemGroup>
   <ItemGroup />
   <PropertyGroup>

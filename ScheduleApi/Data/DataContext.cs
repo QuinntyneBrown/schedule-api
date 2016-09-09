@@ -1,3 +1,4 @@
+using ScheduleApi.Models;
 using System.Data.Entity;
 
 namespace ScheduleApi.Data
@@ -12,7 +13,8 @@ namespace ScheduleApi.Data
             Configuration.AutoDetectChangesEnabled = true;
         }
 
-        public DbSet<Models.ScheduleItem> ScheduleItems { get; set; }
+        public DbSet<ScheduleItem> ScheduleItems { get; set; }
+        public DbSet<User> Users { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

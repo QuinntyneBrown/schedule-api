@@ -26,7 +26,7 @@ namespace ScheduleApi.Data
         }
 
         public IRepository<Models.ScheduleItem> ScheduleItems { get { return GetStandardRepo<Models.ScheduleItem>(); } }
-        
+        public IRepository<Models.User> Users { get { return GetStandardRepo<Models.User>(); } }
 
         protected void ConfigureDbContext(IDbContext dbContext)
         {
