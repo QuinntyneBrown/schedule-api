@@ -11,6 +11,7 @@ import { AppComponent } from './app.component';
 
 import { ActionsModule } from "./actions";
 import { ComponentsModule } from "./components";
+import { HelpersModule } from "./helpers";
 import { ServicesModule } from "./services";
 import { StoreModule } from "./store";
 
@@ -30,6 +31,7 @@ const declarables = [
     imports: [
         ActionsModule,
         ComponentsModule,
+        HelpersModule,
         RoutingModule,
         ServicesModule,
         StoreModule,

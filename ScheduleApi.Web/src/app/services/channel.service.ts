@@ -1,15 +1,17 @@
 import { Injectable } from "@angular/core";
-import { Http } from "@angular/http";
+import { Http, Headers } from "@angular/http";
 import { Channel } from "../models";
 import { Observable } from "rxjs";
 import { extractData } from "../utilities";
+
+import { HttpHelper } from "../helpers";
 
 import { apiCofiguration } from "../configuration";
 
 
 @Injectable()
 export class ChannelService {
-    constructor(private _http: Http) { }
+    constructor(private _http: Http, private _httpHelper: HttpHelper) { }
 
     public add(entity: Channel) {
         return this._http
@@ -20,9 +22,9 @@ export class ChannelService {
             });
     }
 
-    public get() {
+    public get() {        
         return this._http
-            .get(`${apiCofiguration.baseUrl}/api/channel/get`)
+            .get(`${apiCofiguration.baseUrl}/api/channel/get`, { headers: this._httpHelper.headers })
             .map(data => data.json())
             .catch(err => {
                 return Observable.of(false);

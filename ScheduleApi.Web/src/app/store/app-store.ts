@@ -4,7 +4,7 @@ import { AppState } from "./app-state";
 import { guid, pluck } from "../utilities";
 import { select, SelectSignature } from '@ngrx/core/operator/select';
 import { Observable, BehaviorSubject } from "rxjs";
-import { ScheduleItem } from "../models";
+import { ScheduleItem, Channel } from "../models";
 
 
 @Injectable()
@@ -46,6 +46,13 @@ export class AppStore {
         return this._store.select("token")
             .map((data: { token: string }) => {
                 return data.token;
+            });
+    }
+
+    public channels$(): Observable<Array<Channel>> {
+        return this._store.select("channel")
+            .map((data: { channels: Array<Channel> }) => {
+                return data.channels;
             });
     }
 
