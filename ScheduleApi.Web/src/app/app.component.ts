@@ -1,13 +1,12 @@
-import { Component, ChangeDetectionStrategy, Input, OnInit } from "@angular/core";
+import { Component, ChangeDetectionStrategy, Input, OnInit, ViewEncapsulation } from "@angular/core";
 
 @Component({
     template: require("./app.component.html"),
     styles: [require("./app.component.scss")],
-    selector: "h-app",
-    changeDetection: ChangeDetectionStrategy.OnPush
+    selector: "app",
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    encapsulation: ViewEncapsulation.None
 })
-export class AppComponent implements OnInit { 
-    ngOnInit() {
+export class AppComponent { 
 
-    }
 }

@@ -1,10 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from "@angular/common";
+import { ScheduleItemActions } from "./schedule-item.actions";
 
-import { ActionsComponent } from './actions.component';
-
-const declarables = [ActionsComponent];
-const providers = [];
+const providers = [ScheduleItemActions];
 
 @NgModule({
     imports: [CommonModule],

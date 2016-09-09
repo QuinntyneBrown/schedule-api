@@ -1,9 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from "@angular/common";
 
-import { ServicesComponent } from './services.component';
-
-const declarables = [ServicesComponent];
+const declarables = [];
 const providers = [];
 
 @NgModule({

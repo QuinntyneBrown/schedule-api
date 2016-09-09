@@ -6,8 +6,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>
-    </ProductVersion>
+    <ProductVersion></ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{658DA84D-AD6C-414A-9333-B89232911187}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
@@ -22,8 +21,7 @@
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
     <UseGlobalApplicationHostFile />
-    <NuGetPackageImportStamp>
-    </NuGetPackageImportStamp>
+    <NuGetPackageImportStamp></NuGetPackageImportStamp>
     <TypeScriptToolsVersion>1.8</TypeScriptToolsVersion>
     <TypeScriptEmitDecoratorMetadata>true</TypeScriptEmitDecoratorMetadata>
     <TypeScriptModuleKind>commonjs</TypeScriptModuleKind>
@@ -198,6 +196,22 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+    <Content Include="src\app\app.component.html">
+      <DependentUpon>app.component.ts</DependentUpon>
+    </Content>
+    <Content Include="src\app\app.component.scss">
+      <DependentUpon>app.component.ts</DependentUpon>
+    </Content>
+    <Content Include="src\app\pages\home-page.component.html">
+      <DependentUpon>home-page.component.ts</DependentUpon>
+    </Content>
+    <Content Include="src\app\pages\home-page.component.scss">
+      <DependentUpon>home-page.component.ts</DependentUpon>
+    </Content>
+    <Content Include="src\styles\index.scss" />
+    <Content Include="src\styles\_breakpoints.scss" />
+    <Content Include="src\styles\_normalize.scss" />
+    <Content Include="src\styles\_varibles.scss" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -226,6 +240,65 @@
       <Name>ScheduleApi</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="src\app\actions\actions.module.ts" />
+    <TypeScriptCompile Include="src\app\actions\index.ts" />
+    <TypeScriptCompile Include="src\app\actions\schedule-item.actions.ts" />
+    <TypeScriptCompile Include="src\app\app.component.ts" />
+    <TypeScriptCompile Include="src\app\app.module.ts" />
+    <TypeScriptCompile Include="src\app\components\components.module.ts" />
+    <TypeScriptCompile Include="src\app\components\index.ts" />
+    <TypeScriptCompile Include="src\app\configuration\api-configuration.ts" />
+    <TypeScriptCompile Include="src\app\configuration\index.ts" />
+    <TypeScriptCompile Include="src\app\constants\add-schedule-item-success.action.ts" />
+    <TypeScriptCompile Include="src\app\constants\get-current-user-success.ts" />
+    <TypeScriptCompile Include="src\app\constants\get-schedule-item-success.action.ts" />
+    <TypeScriptCompile Include="src\app\constants\index.ts" />
+    <TypeScriptCompile Include="src\app\constants\remove-schedule-item-success.action.ts" />
+    <TypeScriptCompile Include="src\app\constants\user-logged-in.ts" />
+    <TypeScriptCompile Include="src\app\constants\user-logged-out.ts" />
+    <TypeScriptCompile Include="src\app\environment.ts" />
+    <TypeScriptCompile Include="src\app\helpers\helpers.module.ts" />
+    <TypeScriptCompile Include="src\app\helpers\index.ts" />
+    <TypeScriptCompile Include="src\app\index.ts" />
+    <TypeScriptCompile Include="src\app\models\index.ts" />
+    <TypeScriptCompile Include="src\app\models\schedule-item.model.ts" />
+    <TypeScriptCompile Include="src\app\pages\home-page.component.ts" />
+    <TypeScriptCompile Include="src\app\pages\index.ts" />
+    <TypeScriptCompile Include="src\app\pipes\index.ts" />
+    <TypeScriptCompile Include="src\app\routing\index.ts" />
+    <TypeScriptCompile Include="src\app\routing\providers\authentication.guard.ts" />
+    <TypeScriptCompile Include="src\app\routing\providers\login-redirect.service.ts" />
+    <TypeScriptCompile Include="src\app\routing\routing.module.ts" />
+    <TypeScriptCompile Include="src\app\rxjs-extensions.ts" />
+    <TypeScriptCompile Include="src\app\services\index.ts" />
+    <TypeScriptCompile Include="src\app\services\schedule-item.service.ts" />
+    <TypeScriptCompile Include="src\app\services\services.module.ts" />
+    <TypeScriptCompile Include="src\app\store\app-state.ts" />
+    <TypeScriptCompile Include="src\app\store\app-store.ts" />
+    <TypeScriptCompile Include="src\app\store\current-user.reducer.ts" />
+    <TypeScriptCompile Include="src\app\store\index.ts" />
+    <TypeScriptCompile Include="src\app\store\initial-state.ts" />
+    <TypeScriptCompile Include="src\app\store\schedule-item.reducer.ts" />
+    <TypeScriptCompile Include="src\app\store\store.module.ts" />
+    <TypeScriptCompile Include="src\app\store\token.reducer.ts" />
+    <TypeScriptCompile Include="src\app\utilities\add-or-update.ts" />
+    <TypeScriptCompile Include="src\app\utilities\append-to-body-async.ts" />
+    <TypeScriptCompile Include="src\app\utilities\create-element.ts" />
+    <TypeScriptCompile Include="src\app\utilities\extend-css-async.ts" />
+    <TypeScriptCompile Include="src\app\utilities\extract-data-from-http-response.ts" />
+    <TypeScriptCompile Include="src\app\utilities\guid.ts" />
+    <TypeScriptCompile Include="src\app\utilities\index.ts" />
+    <TypeScriptCompile Include="src\app\utilities\pluck-out.ts" />
+    <TypeScriptCompile Include="src\app\utilities\pluck.ts" />
+    <TypeScriptCompile Include="src\app\utilities\remove-element.ts" />
+    <TypeScriptCompile Include="src\app\utilities\set-opacity-async.ts" />
+    <TypeScriptCompile Include="src\main.ts" />
+    <TypeScriptCompile Include="src\polyfills.ts" />
+    <TypeScriptCompile Include="src\vendor.ts" />
+    <TypeScriptCompile Include="src\app\routing\providers\index.ts" />
+  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
@@ -244,8 +317,7 @@
           <IISUrl>http://localhost:56622/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
-          <CustomServerUrl>
-          </CustomServerUrl>
+          <CustomServerUrl></CustomServerUrl>
           <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
         </WebProjectProperties>
       </FlavorProperties>
