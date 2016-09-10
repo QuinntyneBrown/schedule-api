@@ -6,7 +6,8 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion></ProductVersion>
+    <ProductVersion>
+    </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{658DA84D-AD6C-414A-9333-B89232911187}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
@@ -21,7 +22,8 @@
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
     <UseGlobalApplicationHostFile />
-    <NuGetPackageImportStamp></NuGetPackageImportStamp>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
     <TypeScriptToolsVersion>1.8</TypeScriptToolsVersion>
     <TypeScriptEmitDecoratorMetadata>true</TypeScriptEmitDecoratorMetadata>
     <TypeScriptModuleKind>commonjs</TypeScriptModuleKind>
@@ -202,11 +204,65 @@
     <Content Include="src\app\app.component.scss">
       <DependentUpon>app.component.ts</DependentUpon>
     </Content>
+    <Content Include="src\app\pages\channel-list-page.component.html">
+      <DependentUpon>channel-list-page.component.ts</DependentUpon>
+    </Content>
+    <Content Include="src\app\pages\channel-list-page.component.scss">
+      <DependentUpon>channel-list-page.component.ts</DependentUpon>
+    </Content>
+    <Content Include="src\app\pages\edit-channel-page.component.html">
+      <DependentUpon>edit-channel-page.component.ts</DependentUpon>
+    </Content>
+    <Content Include="src\app\pages\edit-channel-page.component.scss">
+      <DependentUpon>edit-channel-page.component.ts</DependentUpon>
+    </Content>
+    <Content Include="src\app\pages\edit-episode-page.component.html">
+      <DependentUpon>edit-episode-page.component.ts</DependentUpon>
+    </Content>
+    <Content Include="src\app\pages\edit-episode-page.component.scss">
+      <DependentUpon>edit-episode-page.component.ts</DependentUpon>
+    </Content>
+    <Content Include="src\app\pages\edit-schedule-item-page.component.html">
+      <DependentUpon>edit-schedule-item-page.component.ts</DependentUpon>
+    </Content>
+    <Content Include="src\app\pages\edit-schedule-item-page.component.scss">
+      <DependentUpon>edit-schedule-item-page.component.ts</DependentUpon>
+    </Content>
+    <Content Include="src\app\pages\edit-tv-show-page.component.html">
+      <DependentUpon>edit-tv-show-page.component.ts</DependentUpon>
+    </Content>
+    <Content Include="src\app\pages\edit-tv-show-page.component.scss">
+      <DependentUpon>edit-tv-show-page.component.ts</DependentUpon>
+    </Content>
+    <Content Include="src\app\pages\episode-list-page.component.html">
+      <DependentUpon>episode-list-page.component.ts</DependentUpon>
+    </Content>
+    <Content Include="src\app\pages\episode-list-page.component.scss">
+      <DependentUpon>episode-list-page.component.ts</DependentUpon>
+    </Content>
     <Content Include="src\app\pages\home-page.component.html">
       <DependentUpon>home-page.component.ts</DependentUpon>
     </Content>
     <Content Include="src\app\pages\home-page.component.scss">
       <DependentUpon>home-page.component.ts</DependentUpon>
+    </Content>
+    <Content Include="src\app\pages\login-page.component.html">
+      <DependentUpon>login-page.component.ts</DependentUpon>
+    </Content>
+    <Content Include="src\app\pages\login-page.component.scss">
+      <DependentUpon>login-page.component.ts</DependentUpon>
+    </Content>
+    <Content Include="src\app\pages\schedule-item-list-page.component.html">
+      <DependentUpon>schedule-item-list-page.component.ts</DependentUpon>
+    </Content>
+    <Content Include="src\app\pages\schedule-item-list-page.component.scss">
+      <DependentUpon>schedule-item-list-page.component.ts</DependentUpon>
+    </Content>
+    <Content Include="src\app\pages\tv-show-list-page.component.html">
+      <DependentUpon>tv-show-list-page.component.ts</DependentUpon>
+    </Content>
+    <Content Include="src\app\pages\tv-show-list-page.component.scss">
+      <DependentUpon>tv-show-list-page.component.ts</DependentUpon>
     </Content>
     <Content Include="src\styles\index.scss" />
     <Content Include="src\styles\_breakpoints.scss" />
@@ -319,6 +375,15 @@
     <TypeScriptCompile Include="src\app\services\tv-show.service.ts" />
     <TypeScriptCompile Include="src\app\services\channel.service.ts" />
     <TypeScriptCompile Include="src\app\services\episode.service.ts" />
+    <TypeScriptCompile Include="src\app\pages\login-page.component.ts" />
+    <TypeScriptCompile Include="src\app\pages\edit-channel-page.component.ts" />
+    <TypeScriptCompile Include="src\app\pages\edit-tv-show-page.component.ts" />
+    <TypeScriptCompile Include="src\app\pages\edit-episode-page.component.ts" />
+    <TypeScriptCompile Include="src\app\pages\episode-list-page.component.ts" />
+    <TypeScriptCompile Include="src\app\pages\channel-list-page.component.ts" />
+    <TypeScriptCompile Include="src\app\pages\tv-show-list-page.component.ts" />
+    <TypeScriptCompile Include="src\app\pages\schedule-item-list-page.component.ts" />
+    <TypeScriptCompile Include="src\app\pages\edit-schedule-item-page.component.ts" />
   </ItemGroup>
   <ItemGroup />
   <PropertyGroup>
@@ -339,7 +404,8 @@
           <IISUrl>http://localhost:56622/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
-          <CustomServerUrl></CustomServerUrl>
+          <CustomServerUrl>
+          </CustomServerUrl>
           <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
         </WebProjectProperties>
       </FlavorProperties>

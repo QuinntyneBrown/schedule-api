@@ -8,9 +8,17 @@ import {
 import {
     // public 
     HomePageComponent,
+    LoginPageComponent,
 
-    // Admin
+    EditChannelPageComponent,
+    EditEpisodePageComponent,
+    EditScheduleItemPageComponent,
+    EditTvShowPageComponent,
 
+    ChannelListPageComponent,
+    EpisodeListPageComponent,
+    ScheduleItemListPageComponent,
+    TvShowListPageComponent    
 } from "../pages";
 
 export const routes: Routes = [
@@ -22,6 +30,58 @@ export const routes: Routes = [
     {
         path: 'home',
         component: HomePageComponent
+    },
+    {
+        path: 'login',
+        component: LoginPageComponent
+    },
+    {
+        path: 'channel/list',
+        component: ChannelListPageComponent
+    },
+    {
+        path: 'channel/edit/:id',
+        component: EditChannelPageComponent
+    },
+    {
+        path: 'channel/create',
+        component: EditChannelPageComponent
+    },
+    {
+        path: 'episode/list',
+        component: EpisodeListPageComponent
+    },
+    {
+        path: 'episode/edit/:id',
+        component: EditEpisodePageComponent
+    },
+    {
+        path: 'episode/create',
+        component: EditEpisodePageComponent
+    },
+    {
+        path: 'tvshow/list',
+        component: TvShowListPageComponent
+    },
+    {
+        path: 'tvshow/edit/:id',
+        component: EditTvShowPageComponent
+    },
+    {
+        path: 'tvshow/create',
+        component: EditTvShowPageComponent
+    },
+    {
+        path: 'scheduleitem/list',
+        component: ScheduleItemListPageComponent
+    },
+    {
+        path: 'scheduleitem/edit/:id',
+        component: EditScheduleItemPageComponent
+    },
+    {
+        path: 'scheduleitem/create',
+        component: EditScheduleItemPageComponent
     }
 ];
 
