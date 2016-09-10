@@ -1,8 +1,5 @@
 import { Routes, RouterModule } from '@angular/router';
-
-import {
-    AuthenticationGuard
-} from "./providers";
+import { AuthenticationGuard } from "./authentication.guard";
 
 
 import {

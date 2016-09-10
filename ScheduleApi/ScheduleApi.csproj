@@ -194,6 +194,8 @@
     <Compile Include="Data\RepositoryFactories.cs" />
     <Compile Include="Data\RepositoryProvider.cs" />
     <Compile Include="Data\Uow.cs" />
+    <Compile Include="Dtos\ScheduleDayDto.cs" />
+    <Compile Include="Dtos\ScheduleDto.cs" />
     <Compile Include="Dtos\ScheduleItemAddOrUpdateRequestDto.cs" />
     <Compile Include="Dtos\ScheduleItemAddOrUpdateResponseDto.cs" />
     <Compile Include="Dtos\ScheduleItemDto.cs" />
@@ -227,11 +229,17 @@
     <Compile Include="Services\IIdentityService.cs" />
     <Compile Include="Services\MemoryCache.cs" />
     <Compile Include="UnityConfiguration.cs" />
+    <Compile Include="UploadHandlers\FileMultipartFormDataStreamProvider.cs" />
+    <Compile Include="UploadHandlers\InMemoryMultipartFormDataStreamProvider.cs" />
+    <Compile Include="UploadHandlers\StreamHelper.cs" />
     <Compile Include="Utilities\ILogger.cs" />
     <Compile Include="Utilities\ILoggerFactory.cs" />
     <Compile Include="Utilities\ILoggerProvider.cs" />
     <Compile Include="Utilities\Logger.cs" />
     <Compile Include="Utilities\LoggerFactory.cs" />
+    <Compile Include="Services\ScheduleService.cs" />
+    <Compile Include="Services\IScheduleService.cs" />
+    <Compile Include="Controllers\ScheduleController.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

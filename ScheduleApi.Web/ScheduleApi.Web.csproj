@@ -6,8 +6,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>
-    </ProductVersion>
+    <ProductVersion></ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{658DA84D-AD6C-414A-9333-B89232911187}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
@@ -22,8 +21,7 @@
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
     <UseGlobalApplicationHostFile />
-    <NuGetPackageImportStamp>
-    </NuGetPackageImportStamp>
+    <NuGetPackageImportStamp></NuGetPackageImportStamp>
     <TypeScriptToolsVersion>1.8</TypeScriptToolsVersion>
     <TypeScriptEmitDecoratorMetadata>true</TypeScriptEmitDecoratorMetadata>
     <TypeScriptModuleKind>commonjs</TypeScriptModuleKind>
@@ -204,6 +202,12 @@
     <Content Include="src\app\app.component.scss">
       <DependentUpon>app.component.ts</DependentUpon>
     </Content>
+    <Content Include="src\app\components\file-upload.component.html">
+      <DependentUpon>file-upload.component.ts</DependentUpon>
+    </Content>
+    <Content Include="src\app\components\file-upload.component.scss">
+      <DependentUpon>file-upload.component.ts</DependentUpon>
+    </Content>
     <Content Include="src\app\pages\channel-list-page.component.html">
       <DependentUpon>channel-list-page.component.ts</DependentUpon>
     </Content>
@@ -239,6 +243,12 @@
     </Content>
     <Content Include="src\app\pages\episode-list-page.component.scss">
       <DependentUpon>episode-list-page.component.ts</DependentUpon>
+    </Content>
+    <Content Include="src\app\pages\file-upload-page.component.html">
+      <DependentUpon>file-upload-page.component.ts</DependentUpon>
+    </Content>
+    <Content Include="src\app\pages\file-upload-page.component.scss">
+      <DependentUpon>file-upload-page.component.ts</DependentUpon>
     </Content>
     <Content Include="src\app\pages\home-page.component.html">
       <DependentUpon>home-page.component.ts</DependentUpon>
@@ -330,8 +340,8 @@
     <TypeScriptCompile Include="src\app\pages\index.ts" />
     <TypeScriptCompile Include="src\app\pipes\index.ts" />
     <TypeScriptCompile Include="src\app\routing\index.ts" />
-    <TypeScriptCompile Include="src\app\routing\providers\authentication.guard.ts" />
-    <TypeScriptCompile Include="src\app\routing\providers\login-redirect.service.ts" />
+    <TypeScriptCompile Include="src\app\routing\authentication.guard.ts" />
+    <TypeScriptCompile Include="src\app\routing\login-redirect.service.ts" />
     <TypeScriptCompile Include="src\app\routing\routing.module.ts" />
     <TypeScriptCompile Include="src\app\rxjs-extensions.ts" />
     <TypeScriptCompile Include="src\app\services\index.ts" />
@@ -359,7 +369,6 @@
     <TypeScriptCompile Include="src\main.ts" />
     <TypeScriptCompile Include="src\polyfills.ts" />
     <TypeScriptCompile Include="src\vendor.ts" />
-    <TypeScriptCompile Include="src\app\routing\providers\index.ts" />
     <TypeScriptCompile Include="src\app\actions\channel.actions.ts" />
     <TypeScriptCompile Include="src\app\actions\episode.actions.ts" />
     <TypeScriptCompile Include="src\app\actions\tv-show.actions.ts" />
@@ -384,6 +393,8 @@
     <TypeScriptCompile Include="src\app\pages\tv-show-list-page.component.ts" />
     <TypeScriptCompile Include="src\app\pages\schedule-item-list-page.component.ts" />
     <TypeScriptCompile Include="src\app\pages\edit-schedule-item-page.component.ts" />
+    <TypeScriptCompile Include="src\app\components\file-upload.component.ts" />
+    <TypeScriptCompile Include="src\app\pages\file-upload-page.component.ts" />
   </ItemGroup>
   <ItemGroup />
   <PropertyGroup>
@@ -404,8 +415,7 @@
           <IISUrl>http://localhost:56622/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
-          <CustomServerUrl>
-          </CustomServerUrl>
+          <CustomServerUrl></CustomServerUrl>
           <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
         </WebProjectProperties>
       </FlavorProperties>

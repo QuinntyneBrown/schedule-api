@@ -21,6 +21,7 @@ namespace ScheduleApi
             container.RegisterType<IEncryptionService, EncryptionService>();
             container.RegisterType<ILogger, Logger>();
             container.RegisterType<IScheduleItemService, ScheduleItemService>();
+            container.RegisterType<IScheduleService, ScheduleService>();
             container.RegisterInstance(AuthConfiguration.LazyConfig);            
             return container;
         }

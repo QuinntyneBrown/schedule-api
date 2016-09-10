@@ -15,6 +15,7 @@ namespace ScheduleApi.Data
 
         public DbSet<ScheduleItem> ScheduleItems { get; set; }
         public DbSet<User> Users { get; set; }
+        
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

@@ -6,7 +6,7 @@ import {
     RouterStateSnapshot
 } from '@angular/router'
 
-import { AppStore } from "../../store";
+import { AppStore } from "../store";
 import { Observable } from 'rxjs/Observable';
 
 import { LoginRedirectService } from "./login-redirect.service";
